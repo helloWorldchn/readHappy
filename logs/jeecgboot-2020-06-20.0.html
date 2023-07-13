@@ -1,0 +1,3908 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Sat Jun 20 12:44:23 CST 2020</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Level">Level</td>
+<td class="Date">Date</td>
+<td class="Message">Message</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:23,927</td>
+<td class="Message">Starting JeecgApplication on DESKTOP-EB538PJ with PID 5664 (F:\IDEA_space\jeecg-jeecg-boot-master\jeecg-boot\jeecg-boot\jeecg-boot-module-system\target\classes started by Carry in F:\IDEA_space\jeecg-jeecg-boot-master\jeecg-boot\jeecg-boot)</td>
+<td class="MethodOfCaller">logStarting</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:23,927</td>
+<td class="Message">The following profiles are active: dev</td>
+<td class="MethodOfCaller">logStartupProfileInfo</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="LineOfCaller">679</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:32,891</td>
+<td class="Message">Multiple Spring Data modules found, entering strict repository configuration mode!</td>
+<td class="MethodOfCaller">multipleStoresDetected</td>
+<td class="FileOfCaller">RepositoryConfigurationDelegate.java</td>
+<td class="LineOfCaller">244</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:32,891</td>
+<td class="Message">Bootstrapping Spring Data repositories in DEFAULT mode.</td>
+<td class="MethodOfCaller">registerRepositoriesIn</td>
+<td class="FileOfCaller">RepositoryConfigurationDelegate.java</td>
+<td class="LineOfCaller">126</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:33,013</td>
+<td class="Message">Finished Spring Data repository scanning in 84ms. Found 0 repository interfaces.</td>
+<td class="MethodOfCaller">registerRepositoriesIn</td>
+<td class="FileOfCaller">RepositoryConfigurationDelegate.java</td>
+<td class="LineOfCaller">182</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:33,470</td>
+<td class="Message">Bean &#39;shiroConfig&#39; of type [org.jeecg.config.ShiroConfig$$EnhancerBySpringCGLIB$$9e773b61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:33,658</td>
+<td class="Message">Bean &#39;shiroRealm&#39; of type [org.jeecg.modules.shiro.authc.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:34,095</td>
+<td class="Message">===============(1)创建缓存管理器RedisCacheManager</td>
+<td class="MethodOfCaller">redisCacheManager</td>
+<td class="FileOfCaller">ShiroConfig.java</td>
+<td class="LineOfCaller">207</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:34,095</td>
+<td class="Message">===============(2)创建RedisManager,连接Redis..URL= 127.0.0.1:6379</td>
+<td class="MethodOfCaller">redisManager</td>
+<td class="FileOfCaller">ShiroConfig.java</td>
+<td class="LineOfCaller">225</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:34,095</td>
+<td class="Message">Bean &#39;redisManager&#39; of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:34,111</td>
+<td class="Message">Bean &#39;securityManager&#39; of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:34,142</td>
+<td class="Message">Bean &#39;authorizationAttributeSourceAdvisor&#39; of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:34,220</td>
+<td class="Message">Bean &#39;org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration&#39; of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7e71d1cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:34,407</td>
+<td class="Message">Bean &#39;spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties&#39; of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:34,423</td>
+<td class="Message">Bean &#39;com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration&#39; of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$e800429c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:34,423</td>
+<td class="Message">Bean &#39;dsProcessor&#39; of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:34,439</td>
+<td class="Message">Bean &#39;dynamicDatasourceAnnotationAdvisor&#39; of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:34,454</td>
+<td class="Message">Bean &#39;spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties&#39; of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:34,470</td>
+<td class="Message">Bean &#39;org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration&#39; of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$938b9015] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:34,610</td>
+<td class="Message">Bean &#39;lettuceClientResources&#39; of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:34,720</td>
+<td class="Message">Bean &#39;redisConnectionFactory&#39; of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:34,751</td>
+<td class="Message">Bean &#39;redisConfig&#39; of type [org.jeecg.config.RedisConfig$$EnhancerBySpringCGLIB$$e945c2ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:34,782</td>
+<td class="Message">Bean &#39;org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration&#39; of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$918aaf7b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:34,798</td>
+<td class="Message">Bean &#39;eventBus&#39; of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:35,298</td>
+<td class="Message">Tomcat initialized with port(s): 8080 (http)</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">TomcatWebServer.java</td>
+<td class="LineOfCaller">90</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:35,313</td>
+<td class="Message">Initializing ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:35,329</td>
+<td class="Message">Starting service [Tomcat]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:35,329</td>
+<td class="Message">Starting Servlet engine: [Apache Tomcat/9.0.16]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:35,345</td>
+<td class="Message">The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\ProgramData\Anaconda3;D:\ProgramData\Anaconda3\Library\mingw-w64\bin;D:\ProgramData\Anaconda3\Library\usr\bin;D:\ProgramData\Anaconda3\Library\bin;D:\ProgramData\Anaconda3\Scripts;C:\Program Files (x86)\Common Files\NetSarang;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\Program Files\mysql-5.7.25\bin;D:\Program Files (x86)\scala\bin;D:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;D:\Program Files\Redis;D:\Program Files (x86)\Yarn\bin\;D:\Program Files\Java\jdk1.8.0_251\bin;D:\Program Files\Java\jdk1.8.0_251\jre\bin;D:\Program Files\apache-maven-3.5.4\apache-maven-3.5.4\bin;F:\hadoop\hadoop-2.6.5\sbin;F:\hadoop\hadoop-2.6.5\bin;C:\Users\15145\AppData\Local\Microsoft\WindowsApps;F:\Program Files\Bandizip\;C:\Users\15145\AppData\Roaming\npm;C:\Users\15145\AppData\Local\Yarn\bin;D:\Programs\Microsoft VS Code\bin;.]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:43,140</td>
+<td class="Message">Initializing Spring embedded WebApplicationContext</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:43,140</td>
+<td class="Message">Root WebApplicationContext: initialization completed in 19159 ms</td>
+<td class="MethodOfCaller">prepareWebApplicationContext</td>
+<td class="FileOfCaller">ServletWebServerApplicationContext.java</td>
+<td class="LineOfCaller">296</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:43,624</td>
+<td class="Message">动态数据源-检测到druid存在,如配置中未指定type,druid会默认配置</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">DynamicDataSourceCreator.java</td>
+<td class="LineOfCaller">113</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:43,983</td>
+<td class="Message">{dataSource-1,master} inited</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">1003</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:43,983</td>
+<td class="Message">初始共加载 1 个数据源</td>
+<td class="MethodOfCaller">afterPropertiesSet</td>
+<td class="FileOfCaller">DynamicRoutingDataSource.java</td>
+<td class="LineOfCaller">203</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:43,983</td>
+<td class="Message">动态数据源-加载 master 成功</td>
+<td class="MethodOfCaller">addDataSource</td>
+<td class="FileOfCaller">DynamicRoutingDataSource.java</td>
+<td class="LineOfCaller">142</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:43,983</td>
+<td class="Message">当前的默认数据源是单数据源，数据源名为 master</td>
+<td class="MethodOfCaller">afterPropertiesSet</td>
+<td class="FileOfCaller">DynamicRoutingDataSource.java</td>
+<td class="LineOfCaller">212</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:47,740</td>
+<td class="Message">Using default implementation for ThreadExecutor</td>
+<td class="MethodOfCaller">instantiate</td>
+<td class="FileOfCaller">StdSchedulerFactory.java</td>
+<td class="LineOfCaller">1208</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:47,740</td>
+<td class="Message">Job execution threads will use class loader of thread: main</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">SimpleThreadPool.java</td>
+<td class="LineOfCaller">268</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:47,755</td>
+<td class="Message">Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">SchedulerSignalerImpl.java</td>
+<td class="LineOfCaller">61</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:47,755</td>
+<td class="Message">Quartz Scheduler v.2.3.0 created.</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">229</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:47,755</td>
+<td class="Message">Using db table-based data access locking (synchronization).</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">JobStoreSupport.java</td>
+<td class="LineOfCaller">672</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:47,755</td>
+<td class="Message">JobStoreCMT initialized.</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">JobStoreCMT.java</td>
+<td class="LineOfCaller">145</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:47,755</td>
+<td class="Message">Scheduler meta-data: Quartz Scheduler (v2.3.0) &#39;MyScheduler&#39; with instanceId &#39;DESKTOP-EB538PJ1592628287740&#39;
+  Scheduler class: &#39;org.quartz.core.QuartzScheduler&#39; - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool &#39;org.quartz.simpl.SimpleThreadPool&#39; - with 10 threads.
+  Using job-store &#39;org.springframework.scheduling.quartz.LocalDataSourceJobStore&#39; - which supports persistence. and is clustered.
+</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">294</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:47,755</td>
+<td class="Message">Quartz scheduler &#39;MyScheduler&#39; initialized from an externally provided properties instance.</td>
+<td class="MethodOfCaller">instantiate</td>
+<td class="FileOfCaller">StdSchedulerFactory.java</td>
+<td class="LineOfCaller">1362</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:47,755</td>
+<td class="Message">Quartz scheduler version: 2.3.0</td>
+<td class="MethodOfCaller">instantiate</td>
+<td class="FileOfCaller">StdSchedulerFactory.java</td>
+<td class="LineOfCaller">1366</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:47,755</td>
+<td class="Message">JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3ca3eba2</td>
+<td class="MethodOfCaller">setJobFactory</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">2287</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:50,427</td>
+<td class="Message">Exposing 2 endpoint(s) beneath base path &#39;/actuator&#39;</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">EndpointLinksResolver.java</td>
+<td class="LineOfCaller">59</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:50,661</td>
+<td class="Message">Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity&lt;springfox.documentation.spring.web.json.Json&gt; springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]</td>
+<td class="MethodOfCaller">initHandlerMethods</td>
+<td class="FileOfCaller">PropertySourcedRequestMappingHandlerMapping.java</td>
+<td class="LineOfCaller">69</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:51,005</td>
+<td class="Message">Initializing ExecutorService &#39;applicationTaskExecutor&#39;</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">ExecutorConfigurationSupport.java</td>
+<td class="LineOfCaller">171</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,157</td>
+<td class="Message">Context refreshed</td>
+<td class="MethodOfCaller">start</td>
+<td class="FileOfCaller">DocumentationPluginsBootstrapper.java</td>
+<td class="LineOfCaller">160</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,176</td>
+<td class="Message">Found 3 custom documentation plugin(s)</td>
+<td class="MethodOfCaller">start</td>
+<td class="FileOfCaller">DocumentationPluginsBootstrapper.java</td>
+<td class="LineOfCaller">163</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,259</td>
+<td class="Message">Scanning for api listing references</td>
+<td class="MethodOfCaller">scan</td>
+<td class="FileOfCaller">ApiListingReferenceScanner.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,469</td>
+<td class="Message">Scanning for api listing references</td>
+<td class="MethodOfCaller">scan</td>
+<td class="FileOfCaller">ApiListingReferenceScanner.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,548</td>
+<td class="Message">Generating unique operation named: addUsingPOST_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,553</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,556</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,558</td>
+<td class="Message">Generating unique operation named: editUsingPUT_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,560</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,565</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,571</td>
+<td class="Message">Generating unique operation named: addUsingPOST_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,576</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,578</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,581</td>
+<td class="Message">Generating unique operation named: editUsingPUT_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,586</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,591</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,597</td>
+<td class="Message">Generating unique operation named: addUsingPOST_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,599</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,601</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,602</td>
+<td class="Message">Generating unique operation named: editUsingPUT_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,605</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,608</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,617</td>
+<td class="Message">Scanning for api listing references</td>
+<td class="MethodOfCaller">scan</td>
+<td class="FileOfCaller">ApiListingReferenceScanner.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,652</td>
+<td class="Message">Generating unique operation named: loginUsingPOST_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,665</td>
+<td class="Message">Generating unique operation named: addUsingPOST_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,669</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,670</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,672</td>
+<td class="Message">Generating unique operation named: editUsingPUT_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,674</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,679</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,688</td>
+<td class="Message">Generating unique operation named: addUsingPOST_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,689</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,692</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,693</td>
+<td class="Message">Generating unique operation named: editUsingPUT_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,695</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,699</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,705</td>
+<td class="Message">Generating unique operation named: addUsingPOST_6</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,706</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_6</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,707</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_6</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,709</td>
+<td class="Message">Generating unique operation named: editUsingPUT_6</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,711</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_6</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,714</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_6</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,721</td>
+<td class="Message">Generating unique operation named: addUsingPOST_7</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,722</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_7</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,724</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_7</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,725</td>
+<td class="Message">Generating unique operation named: editUsingPUT_7</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,727</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_7</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,731</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_7</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,736</td>
+<td class="Message">Generating unique operation named: addUsingPOST_8</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,738</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_8</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,739</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_8</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,740</td>
+<td class="Message">Generating unique operation named: editUsingPUT_8</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,742</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_8</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,746</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_8</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,755</td>
+<td class="Message">Generating unique operation named: addUsingPOST_9</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,758</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_9</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,759</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_9</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,761</td>
+<td class="Message">Generating unique operation named: editUsingPUT_9</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,762</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_9</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,770</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_9</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,771</td>
+<td class="Message">Starting Quartz Scheduler now</td>
+<td class="MethodOfCaller">startScheduler</td>
+<td class="FileOfCaller">SchedulerFactoryBean.java</td>
+<td class="LineOfCaller">726</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,945</td>
+<td class="Message">ClusterManager: detected 1 failed or restarted instances.</td>
+<td class="MethodOfCaller">logWarnIfNonZero</td>
+<td class="FileOfCaller">JobStoreSupport.java</td>
+<td class="LineOfCaller">3629</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,945</td>
+<td class="Message">ClusterManager: Scanning for instance &quot;DESKTOP-EB538PJ1592549689944&quot;&#39;s failed in-progress jobs.</td>
+<td class="MethodOfCaller">clusterRecover</td>
+<td class="FileOfCaller">JobStoreSupport.java</td>
+<td class="LineOfCaller">3488</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,952</td>
+<td class="Message">Scheduler MyScheduler_$_DESKTOP-EB538PJ1592628287740 started.</td>
+<td class="MethodOfCaller">start</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:52,971</td>
+<td class="Message">Starting ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:53,001</td>
+<td class="Message">Tomcat started on port(s): 8080 (http) with context path &#39;/jeecg-boot&#39;</td>
+<td class="MethodOfCaller">start</td>
+<td class="FileOfCaller">TomcatWebServer.java</td>
+<td class="LineOfCaller">204</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:53,004</td>
+<td class="Message">Started JeecgApplication in 30.226 seconds (JVM running for 32.836)</td>
+<td class="MethodOfCaller">logStarted</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">59</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:44:53,018</td>
+<td class="Message">
+----------------------------------------------------------
+	Application Jeecg-Boot is running! Access URLs:
+	Local: 		http://localhost:8080/jeecg-boot/
+	External: 	http://192.168.145.1:8080/jeecg-boot/
+	Swagger-UI: 		http://192.168.145.1:8080/jeecg-boot/doc.html
+----------------------------------------------------------</td>
+<td class="MethodOfCaller">main</td>
+<td class="FileOfCaller">JeecgApplication.java</td>
+<td class="LineOfCaller">29</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:57:11,230</td>
+<td class="Message">Initializing Spring DispatcherServlet &#39;dispatcherServlet&#39;</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:57:11,230</td>
+<td class="Message">Initializing Servlet &#39;dispatcherServlet&#39;</td>
+<td class="MethodOfCaller">initServletBean</td>
+<td class="FileOfCaller">FrameworkServlet.java</td>
+<td class="LineOfCaller">524</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:57:11,253</td>
+<td class="Message">Completed initialization in 23 ms</td>
+<td class="MethodOfCaller">initServletBean</td>
+<td class="FileOfCaller">FrameworkServlet.java</td>
+<td class="LineOfCaller">546</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:57:11,663</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:57:11,663</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:57:11,675</td>
+<td class="Message">==&gt; Parameters: 1274204628451389443(String), 2020-06-20 12:57:11.532(Timestamp), 202(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:57:11,675</td>
+<td class="Message">==&gt; Parameters: 1274204628451389442(String), 2020-06-20 12:57:11.418(Timestamp), 83(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:57:11,676</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:57:11,676</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:57:50,434</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:57:50,435</td>
+<td class="Message">==&gt; Parameters: 1274204791056166913(String), 2020-06-20 12:57:50.432(Timestamp), 2(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:57:50,437</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:57:50,443</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:57:50,445</td>
+<td class="Message">==&gt; Parameters: 1274204791056166914(String), 2020-06-20 12:57:50.44(Timestamp), 9(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:57:50,446</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:59:04,398</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:59:04,399</td>
+<td class="Message">==&gt; Parameters: 1274205101308833793(String), 2020-06-20 12:59:04.397(Timestamp), 5(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:59:04,401</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:59:04,583</td>
+<td class="Message">Starting without optional epoll library</td>
+<td class="MethodOfCaller">&lt;clinit&gt;</td>
+<td class="FileOfCaller">EpollProvider.java</td>
+<td class="LineOfCaller">68</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 12:59:04,593</td>
+<td class="Message">Starting without optional kqueue library</td>
+<td class="MethodOfCaller">&lt;clinit&gt;</td>
+<td class="FileOfCaller">KqueueProvider.java</td>
+<td class="LineOfCaller">70</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:59:05,369</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:59:05,371</td>
+<td class="Message">==&gt; Parameters: 1274205105389891585(String), 2020-06-20 12:59:05.366(Timestamp), 972(Long), 192.168.1.9(String), (String), org.jeecg.modules.readhappy.token.controller.TokenController.getAccessToken()(String), getAccessToken-获取生成token(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 12:59:05,372</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:00:03,332</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:00:03,333</td>
+<td class="Message">==&gt; Parameters: 1274205348474974210(String), 2020-06-20 13:00:03.33(Timestamp), 4(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:00:03,335</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:00:03,362</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:00:03,364</td>
+<td class="Message">==&gt; Parameters: 1274205348621774849(String), 2020-06-20 13:00:03.36(Timestamp), 8(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:00:03,365</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:01:38,116</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:01:38,118</td>
+<td class="Message">==&gt; Parameters: 1274205746057244673(String), 2020-06-20 13:01:38.115(Timestamp), 3(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:01:38,119</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:01:38,148</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:01:38,149</td>
+<td class="Message">==&gt; Parameters: 1274205746178879490(String), 2020-06-20 13:01:38.147(Timestamp), 8(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:01:38,151</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:01:43,607</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:01:43,608</td>
+<td class="Message">==&gt; Parameters: 1274205769088167938(String), 2020-06-20 13:01:43.606(Timestamp), 9(Long), 192.168.1.9(String),   artid: 62(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artInfo()(String), article-根据文章id获取文章信息(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:01:43,609</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:01:49,404</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:01:49,405</td>
+<td class="Message">==&gt; Parameters: 1274205793356410881(String), 2020-06-20 13:01:49.403(Timestamp), 17(Long), 192.168.1.9(String),   uid: 4  pageNo: 1  pageSize: 3(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artList()(String), article-分页列表查询(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:01:49,407</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:01:49,411</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:01:49,413</td>
+<td class="Message">==&gt; Parameters: 1274205793436102657(String), 2020-06-20 13:01:49.41(Timestamp), 10(Long), 192.168.1.9(String), [&quot;4&quot;](String), org.jeecg.modules.readhappy.member.controller.MemberController.info()(String), member-会员信息统计(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:01:49,414</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:31:38,363</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:31:38,364</td>
+<td class="Message">==&gt; Parameters: 1274213296836243458(String), 2020-06-20 13:31:38.362(Timestamp), 4(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:31:38,366</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:31:38,377</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:31:38,379</td>
+<td class="Message">==&gt; Parameters: 1274213296836243459(String), 2020-06-20 13:31:38.375(Timestamp), 7(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:31:38,381</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:32:25,349</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:32:25,351</td>
+<td class="Message">==&gt; Parameters: 1274213493914005505(String), 2020-06-20 13:32:25.347(Timestamp), 3(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:32:25,353</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:32:25,374</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:32:25,375</td>
+<td class="Message">==&gt; Parameters: 1274213494014668802(String), 2020-06-20 13:32:25.372(Timestamp), 4(Long), 192.168.1.9(String), (String), org.jeecg.modules.readhappy.token.controller.TokenController.getAccessToken()(String), getAccessToken-获取生成token(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:32:25,376</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Sat Jun 20 13:43:09 CST 2020</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Level">Level</td>
+<td class="Date">Date</td>
+<td class="Message">Message</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:10,128</td>
+<td class="Message">Starting JeecgApplication on DESKTOP-EB538PJ with PID 7852 (F:\IDEA_space\jeecg-jeecg-boot-master\jeecg-boot\jeecg-boot\jeecg-boot-module-system\target\classes started by Carry in F:\IDEA_space\jeecg-jeecg-boot-master\jeecg-boot\jeecg-boot)</td>
+<td class="MethodOfCaller">logStarting</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:10,128</td>
+<td class="Message">The following profiles are active: dev</td>
+<td class="MethodOfCaller">logStartupProfileInfo</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="LineOfCaller">679</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:15,565</td>
+<td class="Message">Multiple Spring Data modules found, entering strict repository configuration mode!</td>
+<td class="MethodOfCaller">multipleStoresDetected</td>
+<td class="FileOfCaller">RepositoryConfigurationDelegate.java</td>
+<td class="LineOfCaller">244</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:15,565</td>
+<td class="Message">Bootstrapping Spring Data repositories in DEFAULT mode.</td>
+<td class="MethodOfCaller">registerRepositoriesIn</td>
+<td class="FileOfCaller">RepositoryConfigurationDelegate.java</td>
+<td class="LineOfCaller">126</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:15,658</td>
+<td class="Message">Finished Spring Data repository scanning in 78ms. Found 0 repository interfaces.</td>
+<td class="MethodOfCaller">registerRepositoriesIn</td>
+<td class="FileOfCaller">RepositoryConfigurationDelegate.java</td>
+<td class="LineOfCaller">182</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:16,049</td>
+<td class="Message">Bean &#39;shiroConfig&#39; of type [org.jeecg.config.ShiroConfig$$EnhancerBySpringCGLIB$$823538b0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:16,221</td>
+<td class="Message">Bean &#39;shiroRealm&#39; of type [org.jeecg.modules.shiro.authc.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:16,611</td>
+<td class="Message">===============(1)创建缓存管理器RedisCacheManager</td>
+<td class="MethodOfCaller">redisCacheManager</td>
+<td class="FileOfCaller">ShiroConfig.java</td>
+<td class="LineOfCaller">207</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:16,611</td>
+<td class="Message">===============(2)创建RedisManager,连接Redis..URL= 127.0.0.1:6379</td>
+<td class="MethodOfCaller">redisManager</td>
+<td class="FileOfCaller">ShiroConfig.java</td>
+<td class="LineOfCaller">225</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:16,627</td>
+<td class="Message">Bean &#39;redisManager&#39; of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:16,627</td>
+<td class="Message">Bean &#39;securityManager&#39; of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:16,658</td>
+<td class="Message">Bean &#39;authorizationAttributeSourceAdvisor&#39; of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:16,721</td>
+<td class="Message">Bean &#39;org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration&#39; of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$622fcf1a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:16,892</td>
+<td class="Message">Bean &#39;spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties&#39; of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:16,892</td>
+<td class="Message">Bean &#39;com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration&#39; of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$cbbe3feb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:16,908</td>
+<td class="Message">Bean &#39;dsProcessor&#39; of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:16,908</td>
+<td class="Message">Bean &#39;dynamicDatasourceAnnotationAdvisor&#39; of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:16,924</td>
+<td class="Message">Bean &#39;spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties&#39; of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:16,939</td>
+<td class="Message">Bean &#39;org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration&#39; of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$77498d64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:17,049</td>
+<td class="Message">Bean &#39;lettuceClientResources&#39; of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:17,127</td>
+<td class="Message">Bean &#39;redisConnectionFactory&#39; of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:17,142</td>
+<td class="Message">Bean &#39;redisConfig&#39; of type [org.jeecg.config.RedisConfig$$EnhancerBySpringCGLIB$$cd03bffa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:17,174</td>
+<td class="Message">Bean &#39;org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration&#39; of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$7548acca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:17,189</td>
+<td class="Message">Bean &#39;eventBus&#39; of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:17,580</td>
+<td class="Message">Tomcat initialized with port(s): 8080 (http)</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">TomcatWebServer.java</td>
+<td class="LineOfCaller">90</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:17,595</td>
+<td class="Message">Initializing ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:17,611</td>
+<td class="Message">Starting service [Tomcat]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:17,611</td>
+<td class="Message">Starting Servlet engine: [Apache Tomcat/9.0.16]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:17,611</td>
+<td class="Message">The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\ProgramData\Anaconda3;D:\ProgramData\Anaconda3\Library\mingw-w64\bin;D:\ProgramData\Anaconda3\Library\usr\bin;D:\ProgramData\Anaconda3\Library\bin;D:\ProgramData\Anaconda3\Scripts;C:\Program Files (x86)\Common Files\NetSarang;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\Program Files\mysql-5.7.25\bin;D:\Program Files (x86)\scala\bin;D:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;D:\Program Files\Redis;D:\Program Files (x86)\Yarn\bin\;D:\Program Files\Java\jdk1.8.0_251\bin;D:\Program Files\Java\jdk1.8.0_251\jre\bin;D:\Program Files\apache-maven-3.5.4\apache-maven-3.5.4\bin;F:\hadoop\hadoop-2.6.5\sbin;F:\hadoop\hadoop-2.6.5\bin;C:\Users\15145\AppData\Local\Microsoft\WindowsApps;F:\Program Files\Bandizip\;C:\Users\15145\AppData\Roaming\npm;C:\Users\15145\AppData\Local\Yarn\bin;D:\Programs\Microsoft VS Code\bin;.]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:18,377</td>
+<td class="Message">Initializing Spring embedded WebApplicationContext</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:18,377</td>
+<td class="Message">Root WebApplicationContext: initialization completed in 8217 ms</td>
+<td class="MethodOfCaller">prepareWebApplicationContext</td>
+<td class="FileOfCaller">ServletWebServerApplicationContext.java</td>
+<td class="LineOfCaller">296</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:18,736</td>
+<td class="Message">动态数据源-检测到druid存在,如配置中未指定type,druid会默认配置</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">DynamicDataSourceCreator.java</td>
+<td class="LineOfCaller">113</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:19,017</td>
+<td class="Message">{dataSource-1,master} inited</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">1003</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:19,017</td>
+<td class="Message">初始共加载 1 个数据源</td>
+<td class="MethodOfCaller">afterPropertiesSet</td>
+<td class="FileOfCaller">DynamicRoutingDataSource.java</td>
+<td class="LineOfCaller">203</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:19,017</td>
+<td class="Message">动态数据源-加载 master 成功</td>
+<td class="MethodOfCaller">addDataSource</td>
+<td class="FileOfCaller">DynamicRoutingDataSource.java</td>
+<td class="LineOfCaller">142</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:19,017</td>
+<td class="Message">当前的默认数据源是单数据源，数据源名为 master</td>
+<td class="MethodOfCaller">afterPropertiesSet</td>
+<td class="FileOfCaller">DynamicRoutingDataSource.java</td>
+<td class="LineOfCaller">212</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:22,376</td>
+<td class="Message">Using default implementation for ThreadExecutor</td>
+<td class="MethodOfCaller">instantiate</td>
+<td class="FileOfCaller">StdSchedulerFactory.java</td>
+<td class="LineOfCaller">1208</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:22,391</td>
+<td class="Message">Job execution threads will use class loader of thread: main</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">SimpleThreadPool.java</td>
+<td class="LineOfCaller">268</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:22,391</td>
+<td class="Message">Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">SchedulerSignalerImpl.java</td>
+<td class="LineOfCaller">61</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:22,391</td>
+<td class="Message">Quartz Scheduler v.2.3.0 created.</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">229</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:22,407</td>
+<td class="Message">Using db table-based data access locking (synchronization).</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">JobStoreSupport.java</td>
+<td class="LineOfCaller">672</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:22,407</td>
+<td class="Message">JobStoreCMT initialized.</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">JobStoreCMT.java</td>
+<td class="LineOfCaller">145</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:22,407</td>
+<td class="Message">Scheduler meta-data: Quartz Scheduler (v2.3.0) &#39;MyScheduler&#39; with instanceId &#39;DESKTOP-EB538PJ1592631802391&#39;
+  Scheduler class: &#39;org.quartz.core.QuartzScheduler&#39; - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool &#39;org.quartz.simpl.SimpleThreadPool&#39; - with 10 threads.
+  Using job-store &#39;org.springframework.scheduling.quartz.LocalDataSourceJobStore&#39; - which supports persistence. and is clustered.
+</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">294</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:22,407</td>
+<td class="Message">Quartz scheduler &#39;MyScheduler&#39; initialized from an externally provided properties instance.</td>
+<td class="MethodOfCaller">instantiate</td>
+<td class="FileOfCaller">StdSchedulerFactory.java</td>
+<td class="LineOfCaller">1362</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:22,407</td>
+<td class="Message">Quartz scheduler version: 2.3.0</td>
+<td class="MethodOfCaller">instantiate</td>
+<td class="FileOfCaller">StdSchedulerFactory.java</td>
+<td class="LineOfCaller">1366</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:22,407</td>
+<td class="Message">JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@361fa478</td>
+<td class="MethodOfCaller">setJobFactory</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">2287</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:24,953</td>
+<td class="Message">Exposing 2 endpoint(s) beneath base path &#39;/actuator&#39;</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">EndpointLinksResolver.java</td>
+<td class="LineOfCaller">59</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:25,156</td>
+<td class="Message">Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity&lt;springfox.documentation.spring.web.json.Json&gt; springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]</td>
+<td class="MethodOfCaller">initHandlerMethods</td>
+<td class="FileOfCaller">PropertySourcedRequestMappingHandlerMapping.java</td>
+<td class="LineOfCaller">69</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:25,453</td>
+<td class="Message">Initializing ExecutorService &#39;applicationTaskExecutor&#39;</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">ExecutorConfigurationSupport.java</td>
+<td class="LineOfCaller">171</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,312</td>
+<td class="Message">Context refreshed</td>
+<td class="MethodOfCaller">start</td>
+<td class="FileOfCaller">DocumentationPluginsBootstrapper.java</td>
+<td class="LineOfCaller">160</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,312</td>
+<td class="Message">Found 3 custom documentation plugin(s)</td>
+<td class="MethodOfCaller">start</td>
+<td class="FileOfCaller">DocumentationPluginsBootstrapper.java</td>
+<td class="LineOfCaller">163</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,390</td>
+<td class="Message">Scanning for api listing references</td>
+<td class="MethodOfCaller">scan</td>
+<td class="FileOfCaller">ApiListingReferenceScanner.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,546</td>
+<td class="Message">Scanning for api listing references</td>
+<td class="MethodOfCaller">scan</td>
+<td class="FileOfCaller">ApiListingReferenceScanner.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,609</td>
+<td class="Message">Generating unique operation named: addUsingPOST_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,609</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,609</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,609</td>
+<td class="Message">Generating unique operation named: editUsingPUT_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,609</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,625</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,625</td>
+<td class="Message">Generating unique operation named: addUsingPOST_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,625</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,625</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,625</td>
+<td class="Message">Generating unique operation named: editUsingPUT_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,640</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,640</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,640</td>
+<td class="Message">Generating unique operation named: addUsingPOST_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,640</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,640</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,656</td>
+<td class="Message">Generating unique operation named: editUsingPUT_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,656</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,656</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,656</td>
+<td class="Message">Scanning for api listing references</td>
+<td class="MethodOfCaller">scan</td>
+<td class="FileOfCaller">ApiListingReferenceScanner.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,687</td>
+<td class="Message">Generating unique operation named: loginUsingPOST_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,703</td>
+<td class="Message">Generating unique operation named: addUsingPOST_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,703</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,703</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,703</td>
+<td class="Message">Generating unique operation named: editUsingPUT_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,703</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,718</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,718</td>
+<td class="Message">Generating unique operation named: addUsingPOST_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,718</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,718</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,718</td>
+<td class="Message">Generating unique operation named: editUsingPUT_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,734</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,734</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,734</td>
+<td class="Message">Generating unique operation named: addUsingPOST_6</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,734</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_6</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,734</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_6</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,734</td>
+<td class="Message">Generating unique operation named: editUsingPUT_6</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,734</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_6</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,750</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_6</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,750</td>
+<td class="Message">Generating unique operation named: addUsingPOST_7</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,750</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_7</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,750</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_7</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,750</td>
+<td class="Message">Generating unique operation named: editUsingPUT_7</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,750</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_7</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,765</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_7</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,765</td>
+<td class="Message">Generating unique operation named: addUsingPOST_8</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,765</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_8</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,765</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_8</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,765</td>
+<td class="Message">Generating unique operation named: editUsingPUT_8</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,781</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_8</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,781</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_8</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,781</td>
+<td class="Message">Generating unique operation named: addUsingPOST_9</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,781</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_9</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,796</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_9</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,796</td>
+<td class="Message">Generating unique operation named: editUsingPUT_9</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,796</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_9</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,796</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_9</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">40</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,796</td>
+<td class="Message">Starting Quartz Scheduler now</td>
+<td class="MethodOfCaller">startScheduler</td>
+<td class="FileOfCaller">SchedulerFactoryBean.java</td>
+<td class="LineOfCaller">726</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,953</td>
+<td class="Message">ClusterManager: detected 1 failed or restarted instances.</td>
+<td class="MethodOfCaller">logWarnIfNonZero</td>
+<td class="FileOfCaller">JobStoreSupport.java</td>
+<td class="LineOfCaller">3629</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,953</td>
+<td class="Message">ClusterManager: Scanning for instance &quot;DESKTOP-EB538PJ1592628287740&quot;&#39;s failed in-progress jobs.</td>
+<td class="MethodOfCaller">clusterRecover</td>
+<td class="FileOfCaller">JobStoreSupport.java</td>
+<td class="LineOfCaller">3488</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,953</td>
+<td class="Message">Scheduler MyScheduler_$_DESKTOP-EB538PJ1592631802391 started.</td>
+<td class="MethodOfCaller">start</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:26,988</td>
+<td class="Message">Starting ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:27,016</td>
+<td class="Message">Tomcat started on port(s): 8080 (http) with context path &#39;/jeecg-boot&#39;</td>
+<td class="MethodOfCaller">start</td>
+<td class="FileOfCaller">TomcatWebServer.java</td>
+<td class="LineOfCaller">204</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:27,018</td>
+<td class="Message">Started JeecgApplication in 17.593 seconds (JVM running for 19.133)</td>
+<td class="MethodOfCaller">logStarted</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">59</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:43:27,033</td>
+<td class="Message">
+----------------------------------------------------------
+	Application Jeecg-Boot is running! Access URLs:
+	Local: 		http://localhost:8080/jeecg-boot/
+	External: 	http://192.168.145.1:8080/jeecg-boot/
+	Swagger-UI: 		http://192.168.145.1:8080/jeecg-boot/doc.html
+----------------------------------------------------------</td>
+<td class="MethodOfCaller">main</td>
+<td class="FileOfCaller">JeecgApplication.java</td>
+<td class="LineOfCaller">29</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:44:50,144</td>
+<td class="Message">Initializing Spring DispatcherServlet &#39;dispatcherServlet&#39;</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:44:50,144</td>
+<td class="Message">Initializing Servlet &#39;dispatcherServlet&#39;</td>
+<td class="MethodOfCaller">initServletBean</td>
+<td class="FileOfCaller">FrameworkServlet.java</td>
+<td class="LineOfCaller">524</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:44:50,165</td>
+<td class="Message">Completed initialization in 20 ms</td>
+<td class="MethodOfCaller">initServletBean</td>
+<td class="FileOfCaller">FrameworkServlet.java</td>
+<td class="LineOfCaller">546</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:44:50,714</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:44:50,714</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:44:50,726</td>
+<td class="Message">==&gt; Parameters: 1274216620184625155(String), 2020-06-20 13:44:50.537(Timestamp), 299(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:44:50,726</td>
+<td class="Message">==&gt; Parameters: 1274216620184625154(String), 2020-06-20 13:44:50.374(Timestamp), 134(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:44:50,728</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:44:50,728</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:44:52,479</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:44:52,482</td>
+<td class="Message">==&gt; Parameters: 1274216627600154626(String), 2020-06-20 13:44:52.478(Timestamp), 4(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:44:52,484</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:44:52,650</td>
+<td class="Message">Starting without optional epoll library</td>
+<td class="MethodOfCaller">&lt;clinit&gt;</td>
+<td class="FileOfCaller">EpollProvider.java</td>
+<td class="LineOfCaller">68</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-06-20 13:44:52,658</td>
+<td class="Message">Starting without optional kqueue library</td>
+<td class="MethodOfCaller">&lt;clinit&gt;</td>
+<td class="FileOfCaller">KqueueProvider.java</td>
+<td class="LineOfCaller">70</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:44:53,419</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:44:53,420</td>
+<td class="Message">==&gt; Parameters: 1274216631546994689(String), 2020-06-20 13:44:53.417(Timestamp), 940(Long), 192.168.1.9(String), (String), org.jeecg.modules.readhappy.token.controller.TokenController.getAccessToken()(String), getAccessToken-获取生成token(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 13:44:53,422</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:05:27,228</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:05:27,230</td>
+<td class="Message">==&gt; Parameters: 1274221806508630018(String), 2020-06-20 14:05:27.227(Timestamp), 9(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:05:27,233</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:05:27,233</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:05:27,235</td>
+<td class="Message">==&gt; Parameters: 1274221806525407234(String), 2020-06-20 14:05:27.227(Timestamp), 4(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:05:27,237</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:06:19,859</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:06:19,860</td>
+<td class="Message">==&gt; Parameters: 1274222027267432450(String), 2020-06-20 14:06:19.858(Timestamp), 11(Long), 192.168.1.9(String),   cate: 0  pageNo: 2  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:06:19,862</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:06:23,061</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:06:23,063</td>
+<td class="Message">==&gt; Parameters: 1274222040689205249(String), 2020-06-20 14:06:23.059(Timestamp), 14(Long), 192.168.1.9(String),   cate: 0  pageNo: 3  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:06:23,064</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:08:53,437</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:08:53,438</td>
+<td class="Message">==&gt; Parameters: 1274222671416057857(String), 2020-06-20 14:08:53.436(Timestamp), 3(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:08:53,440</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:08:53,440</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:08:53,441</td>
+<td class="Message">==&gt; Parameters: 1274222671432835074(String), 2020-06-20 14:08:53.44(Timestamp), 7(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:08:53,443</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:11:53,361</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:11:53,362</td>
+<td class="Message">==&gt; Parameters: 1274223426021679106(String), 2020-06-20 14:11:53.36(Timestamp), 3(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:11:53,364</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:11:53,379</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:11:53,380</td>
+<td class="Message">==&gt; Parameters: 1274223426134925314(String), 2020-06-20 14:11:53.378(Timestamp), 8(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:11:53,381</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:12:13,705</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:12:13,706</td>
+<td class="Message">==&gt; Parameters: 1274223511363182594(String), 2020-06-20 14:12:13.704(Timestamp), 4(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:12:13,708</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:12:13,730</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:12:13,731</td>
+<td class="Message">==&gt; Parameters: 1274223511451262977(String), 2020-06-20 14:12:13.729(Timestamp), 8(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:12:13,733</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:18:36,864</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:18:36,866</td>
+<td class="Message">==&gt; Parameters: 1274225118486257666(String), 2020-06-20 14:18:36.863(Timestamp), 4(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:18:36,868</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:18:36,878</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:18:36,881</td>
+<td class="Message">==&gt; Parameters: 1274225118486257667(String), 2020-06-20 14:18:36.877(Timestamp), 7(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:18:36,883</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:27:01,427</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:27:01,428</td>
+<td class="Message">==&gt; Parameters: 1274227234739118081(String), 2020-06-20 14:27:01.425(Timestamp), 5(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:27:01,430</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:27:01,432</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:27:01,433</td>
+<td class="Message">==&gt; Parameters: 1274227234739118082(String), 2020-06-20 14:27:01.431(Timestamp), 10(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:27:01,434</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:27:04,390</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:27:04,390</td>
+<td class="Message">==&gt; Parameters: 1274227247179423746(String), 2020-06-20 14:27:04.389(Timestamp), 9(Long), 192.168.1.9(String),   artid: 60(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artInfo()(String), article-根据文章id获取文章信息(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:27:04,392</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:28:17,184</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:28:17,185</td>
+<td class="Message">==&gt; Parameters: 1274227552524754945(String), 2020-06-20 14:28:17.182(Timestamp), 3(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:28:17,186</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:28:17,196</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:28:17,197</td>
+<td class="Message">==&gt; Parameters: 1274227552579280897(String), 2020-06-20 14:28:17.195(Timestamp), 7(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:28:17,198</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:28:57,930</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:28:57,931</td>
+<td class="Message">==&gt; Parameters: 1274227723430060034(String), 2020-06-20 14:28:57.93(Timestamp), 3(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:28:57,933</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:28:57,937</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:28:57,938</td>
+<td class="Message">==&gt; Parameters: 1274227723455225857(String), 2020-06-20 14:28:57.936(Timestamp), 6(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:28:57,939</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:31:06,114</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:31:06,115</td>
+<td class="Message">==&gt; Parameters: 1274228261026586625(String), 2020-06-20 14:31:06.113(Timestamp), 2(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:31:06,117</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:31:06,137</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:31:06,138</td>
+<td class="Message">==&gt; Parameters: 1274228261110472706(String), 2020-06-20 14:31:06.136(Timestamp), 7(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:31:06,139</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:32:01,164</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:32:01,165</td>
+<td class="Message">==&gt; Parameters: 1274228491973353473(String), 2020-06-20 14:32:01.164(Timestamp), 2(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:32:01,167</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:32:01,183</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:32:01,184</td>
+<td class="Message">==&gt; Parameters: 1274228492048850945(String), 2020-06-20 14:32:01.183(Timestamp), 7(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:32:01,185</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:02,036</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:02,036</td>
+<td class="Message">==&gt; Parameters: 1274228747284832258(String), 2020-06-20 14:33:02.035(Timestamp), 2(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:02,038</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:02,059</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:02,060</td>
+<td class="Message">==&gt; Parameters: 1274228747385495553(String), 2020-06-20 14:33:02.058(Timestamp), 6(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:02,061</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:06,336</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:06,337</td>
+<td class="Message">==&gt; Parameters: 1274228765324533761(String), 2020-06-20 14:33:06.335(Timestamp), 12(Long), 192.168.1.9(String),   uid: 4  pageNo: 1  pageSize: 3(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artList()(String), article-分页列表查询(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:06,338</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:06,524</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:06,525</td>
+<td class="Message">==&gt; Parameters: 1274228766108868610(String), 2020-06-20 14:33:06.524(Timestamp), 10(Long), 192.168.1.9(String), [&quot;4&quot;](String), org.jeecg.modules.readhappy.member.controller.MemberController.info()(String), member-会员信息统计(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:06,527</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:10,047</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:10,048</td>
+<td class="Message">==&gt; Parameters: 1274228780889595906(String), 2020-06-20 14:33:10.046(Timestamp), 5(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:10,049</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:10,050</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:10,051</td>
+<td class="Message">==&gt; Parameters: 1274228780897984514(String), 2020-06-20 14:33:10.049(Timestamp), 4(Long), 192.168.1.9(String), (String), org.jeecg.modules.readhappy.token.controller.TokenController.getAccessToken()(String), getAccessToken-获取生成token(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:33:10,053</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:35:09,936</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:35:09,937</td>
+<td class="Message">==&gt; Parameters: 1274229283706953730(String), 2020-06-20 14:35:09.936(Timestamp), 3(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:35:09,938</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:35:09,956</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:35:09,956</td>
+<td class="Message">==&gt; Parameters: 1274229283790839809(String), 2020-06-20 14:35:09.955(Timestamp), 7(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:35:09,957</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:36:28,135</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:36:28,136</td>
+<td class="Message">==&gt; Parameters: 1274229611705720833(String), 2020-06-20 14:36:28.134(Timestamp), 3(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:36:28,139</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:36:28,141</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:36:28,141</td>
+<td class="Message">==&gt; Parameters: 1274229611747663874(String), 2020-06-20 14:36:28.14(Timestamp), 7(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:36:28,143</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:22,317</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:22,318</td>
+<td class="Message">==&gt; Parameters: 1274230090636517377(String), 2020-06-20 14:38:22.316(Timestamp), 3(Long), 192.168.1.9(String), (String), org.jeecg.modules.readhappy.token.controller.TokenController.getAccessToken()(String), getAccessToken-获取生成token(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:22,319</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:22,320</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:22,321</td>
+<td class="Message">==&gt; Parameters: 1274230090636517378(String), 2020-06-20 14:38:22.319(Timestamp), 3(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:22,322</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:32,492</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:32,493</td>
+<td class="Message">==&gt; Parameters: 1274230133300977666(String), 2020-06-20 14:38:32.491(Timestamp), 3(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:32,494</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:32,496</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:32,497</td>
+<td class="Message">==&gt; Parameters: 1274230133300977667(String), 2020-06-20 14:38:32.496(Timestamp), 5(Long), 192.168.1.9(String),   cate: 0  pageNo: 1  pageSize: 4(String), org.jeecg.modules.readhappy.article.controller.ArticleController.artListByCate()(String), article-根据文章类别查询列表(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:32,498</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:40,180</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:40,182</td>
+<td class="Message">==&gt;  Preparing: INSERT INTO sys_log ( id, create_time, cost_time, ip, request_param, method, log_content, log_type, operate_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) </td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:40,182</td>
+<td class="Message">==&gt; Parameters: 1274230165563564033(String), 2020-06-20 14:38:40.179(Timestamp), 3(Long), 192.168.1.9(String), (String), org.jeecg.modules.readhappy.token.controller.TokenController.getAccessToken()(String), getAccessToken-获取生成token(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:40,183</td>
+<td class="Message">==&gt; Parameters: 1274230165571952641(String), 2020-06-20 14:38:40.181(Timestamp), 3(Long), 192.168.1.9(String),   pid: 0(String), org.jeecg.modules.readhappy.categories.controller.CategoriesController.cateType()(String), categories-查询文章分类(String), 2(Integer), 1(Integer)</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:40,184</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
+
+<tr class="debug even">
+<td class="Level">DEBUG</td>
+<td class="Date">2020-06-20 14:38:40,184</td>
+<td class="Message">&lt;==    Updates: 1</td>
+<td class="MethodOfCaller">debug</td>
+<td class="FileOfCaller">BaseJdbcLogger.java</td>
+<td class="LineOfCaller">143</td>
+</tr>
